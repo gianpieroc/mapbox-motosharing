@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { Store } from 'redux';
 
 import configureStore from './src/configureStore';
+import App from './src/screens/App';
 
 const Yego: React.FC = () => {
   const [store, setStore] = useState<Store>();
