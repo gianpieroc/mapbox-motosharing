@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
-import { Store } from 'redux';
-
-import configureStore from './src/configureStore';
+import store from './src/configureStore';
 import App from './src/screens/App';
 
-const Yego: React.FC = () => {
-  const [store, setStore] = useState<Store>();
-
-  useEffect(() => {
-    setStore(configureStore());
-  }, []);
-
-  if (store) {
-    return (
-      <Provider store={store}>
-        <App />
-      </Provider>
-    );
-  }
-  return null;
-};
+const Yego: React.FC = () => (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
 export default Yego;

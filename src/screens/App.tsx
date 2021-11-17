@@ -6,6 +6,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+
 import Color from '../../static/types/colors';
 
 const App: React.FC = () => (
@@ -30,7 +31,7 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   sectionContainer: {
-    marginTop: 32,
+    marginVertical: 16,
     paddingHorizontal: 24,
   },
   sectionTitle: {

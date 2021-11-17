@@ -1,12 +1,9 @@
-import {
-  Store,
-} from 'redux';
 import thunk from 'redux-thunk';
 import { configureStore } from '@reduxjs/toolkit';
 
 import vehicles from './reducers/vehicles';
 
-export default (): Store => configureStore({
+const store = configureStore({
   reducer: {
     vehicles,
   },
@@ -15,3 +12,8 @@ export default (): Store => configureStore({
   ],
   devTools: process.env.NODE_ENV !== 'production',
 });
+
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
+
+export default store;
