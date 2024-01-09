@@ -1,27 +1,33 @@
 import React from 'react';
 import {
-  StyleSheet,
+  StyleSheet, View,
 } from 'react-native';
-import MapView from 'react-native-maps';
+import Mapbox from '@rnmapbox/maps';
 
 const Map: React.FC = () => (
-  <MapView
+  <Mapbox.MapView
     style={styles.map}
-    showsMyLocationButton={false}
-    showsCompass={false}
-    showsPointsOfInterest={false}
-    showsTraffic={false}
-    showsIndoors={false}
-    showsIndoorLevelPicker={false}
-    toolbarEnabled={false}
-    pitchEnabled={false}
-  />
+    compassEnabled={false}
+    scaleBarEnabled={false}
+    gestureSettings={{
+      pitchEnabled: false,
+    }}
+  >
+    <Mapbox.Images
+      images={{
+        markerBlack: require('../../static/images/icon_scooter_black.png'),
+        markerGreen: require('../../static/images/icon_scooter_green.png'),
+        markerOrange: require('../../static/images/icon_scooter_orange.png'),
+        markerRed: require('../../static/images/icon_scooter_red.png'),
+      }}
+    />
+  </Mapbox.MapView>
 );
 
 const styles = StyleSheet.create({
   map: {
-    flex: 1,
     width: '100%',
+    height: '100%',
   },
 });
 
