@@ -1,32 +1,4 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-
-## Get started
-
-1. Install dependencies
-
-```bash
-bun install
-```
-
-2. Start the app
-
-```bash
-bunx expo prebuild --clean
-bun run ios # for ios
-bun run android # for android
-```
-
-3. Start the backend
-
-```bash
-bun run run:backend
-```
-
-4.
-
-# Web Technical Test
+# App Technical Test
 
 You will build a tiny Yego Mobile app with React Native and Expo. The objective will be to test your technical skills and knowledge of this language and followings stack. You will be evaluated on the code structure and graphical structure of your application. The goal is to have a complete overview of your skills.
 
