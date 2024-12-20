@@ -13,14 +13,14 @@ export default ({ config }: { config: ExpoConfig }): ExpoConfig => {
     newArchEnabled: true,
     ios: {
       supportsTablet: true,
-      bundleIdentifier: 'com.rwanito-.myapp',
+      bundleIdentifier: 'com.yegotiny.myapp',
     },
     android: {
       adaptiveIcon: {
         foregroundImage: './assets/images/adaptive-icon.png',
         backgroundColor: '#ffffff',
       },
-      package: 'com.rwanito_.myapp',
+      package: 'com.yegotiny.myapp',
     },
     web: {
       bundler: 'metro',
