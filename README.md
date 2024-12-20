@@ -67,7 +67,7 @@ Please find what we are going to review in your project :
 
 - The app should display our scooters on a map using Mapbox, represented by points.
 - The app should handle connection and update from WS to an internal state (a simple pattern is already set),
-- The app should display an orange marker if the scooter status is available,
+- The app should display an orange marker if the scooter status is available (feel free to find any assets you want),
 - The app should NOT display a marker if the scooter status is something else than available,
 - The app should be able to let the user select a scooter and display the information of the scooter,
 - The app should be able to handle the booking feature (a simple pattern is already set),
@@ -77,10 +77,6 @@ Please find what we are going to review in your project :
 We do not provide a design to follow. Feel free to show us your skills!
 
 ## Specifications
-
-### Assets
-
-Assets are provided in the `./src/assets` folders.
 
 ### Mapbox API keys
 
