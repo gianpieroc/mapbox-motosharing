@@ -66,19 +66,15 @@ It is allowed to use the type definition of the backend directly in the frontend
 Please find what we are going to review in your project :
 
 - The app should display our scooters on a map using Mapbox, represented by points.
-- The app should handle connection and update from WS to an internal state,
+- The app should handle connection and update from WS to an internal state (a simple pattern is already set),
 - The app should display an orange marker if the scooter status is available,
 - The app should NOT display a marker if the scooter status is something else than available,
 - The app should be able to let the user select a scooter and display the information of the scooter,
-- The app should be able to handle the booking feature,
+- The app should be able to handle the booking feature (a simple pattern is already set),
 - The app should let the user know if he booked a vehicle,
 - The app should be able to handle the unbooking feature,
 
 We do not provide a design to follow. Feel free to show us your skills!
-
-### Bonus
-
-- The app should display the zone on the map provided in `./src/assets/zones/barcelona.json`.
 
 ## Specifications
 
