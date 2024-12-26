@@ -35,7 +35,6 @@ export const VehiclesProvider = ({
 }) => {
   const socketClient = useRef(
     io("http://127.0.0.1:3000", {
-      // Replace with your development machine's IP address
       autoConnect: false,
     }) as Socket<ServerToClientEvents, ClientToServerEvents>
   );
